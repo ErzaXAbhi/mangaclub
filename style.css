@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Borel&family=Noto+Sans+JP:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background: #d3c3a6;
+  height: 169dvh;
+  border: 1rem solid;
+  border-radius: 5px;
+  border-color: #000;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  width: 100%;
+}
+
+.header h1 {
+  font-size: 13rem;
+  color: #d3c3a6;
+  visibility: hidden;
+}
+
+nav {
+  margin-top: 1.5rem;
+  display: flex;
+  border: 2px solid #000;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: start;
+}
+
+nav ul li {
+  margin: 0.3rem;
+  margin-left: 10rem;
+  font-weight: 500;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0rem;
+}
+
+.hero-img {
+  margin: 1rem;
+}
+
+.hero-img img {
+  border: 2px solid #000;
+}
+
+.hero-context {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.hero-heading h1 {
+  font-size: 7rem;
+  line-height: 0.8;
+  text-transform: uppercase;
+}
+
+.hero-heading h1 span {
+  color: #960018;
+}
+
+.hero-heading p {
+  width: 45%;
+  margin-right: 2rem;
+  font-weight: 500;
+}
+
+.hero-heading-img {
+  width: 100%;
+}
+
+.hero-heading-img img {
+  width: 96%;
+  height: 26.6rem;
+  border: 2px solid #000;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    width: 100%;
+  }
+
+  .header h1 {
+    font-size: 7rem;
+    color: #d3c3a6;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-left: 7rem;
+    text-align: center;
+  }
+}
